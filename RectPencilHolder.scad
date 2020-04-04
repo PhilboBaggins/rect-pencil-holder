@@ -46,8 +46,8 @@ module RectPencilHolder_Top2D(
             if (isCornerPos(x, y, numX, numY) == false)
             {
                 translate([x * posFactor, y * posFactor])
-                circle(r = holeRadius, $fn=FN);
-                //square([2 * holeRadius, 2 * holeRadius], center=true);
+                //circle(r = holeRadius, $fn=FN);
+                square([2 * holeRadius, 2 * holeRadius], center=true);
             }
         }
 
